@@ -21,7 +21,7 @@ namespace GaemStuffsExempleYey.Items.Armor
             character.Stats.Strength.Value += 1;
             character.EquippedItems.Add(this);
         }
-        public void UnEquip(Character character)
+        public void Unequip(Character character)
         {
             character.ArmorClass -= Protection;
             character.Stats.Strength.Value -= 1;

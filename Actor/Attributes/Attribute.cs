@@ -5,7 +5,7 @@ namespace GaemStuffsExempleYey.Actor.Attributes
     public abstract class Attribute
     {
         public string Name { get; }
-        public short Value
+        public byte Value
         {
             get { return Value; }
             set
@@ -21,7 +21,7 @@ namespace GaemStuffsExempleYey.Actor.Attributes
 
         public AttributeCategory Category { get; }
 
-        public Attribute(string name, short value, AttributeCategory category)
+        public Attribute(string name, byte value, AttributeCategory category)
         {
             Name = name;
             Value = value;

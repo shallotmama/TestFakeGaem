@@ -24,7 +24,7 @@ namespace GaemStuffsExempleYey.Actor
             Charisma = new Charisma();
         }
 
-        public StatArray(short str, short dex, short con, short intel, short wis, short cha)
+        public StatArray(byte str, byte dex, byte con, byte intel, byte wis, byte cha)
         {
             Strength = new Strength(str);
             Dexterity = new Dexterity(dex);
@@ -48,12 +48,12 @@ namespace GaemStuffsExempleYey.Actor
         {
             Random r = new Random();
 
-            Strength.Value = (short)r.Next(1, 256);
-            Dexterity.Value = (short)r.Next(1, 256);
-            Constitution.Value = (short)r.Next(1, 256);
-            Intelligence.Value = (short)r.Next(1, 256);
-            Wisdom.Value = (short)r.Next(1, 256);
-            Charisma.Value = (short)r.Next(1, 256);
+            Strength.Value = (byte)r.Next(1, 256);
+            Dexterity.Value = (byte)r.Next(1, 256);
+            Constitution.Value = (byte)r.Next(1, 256);
+            Intelligence.Value = (byte)r.Next(1, 256);
+            Wisdom.Value = (byte)r.Next(1, 256);
+            Charisma.Value = (byte)r.Next(1, 256);
         }
     }
 }

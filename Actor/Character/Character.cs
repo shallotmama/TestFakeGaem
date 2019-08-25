@@ -16,7 +16,7 @@ namespace GaemStuffsExempleYey.Actor.Character
             set { CurrentHealth = Math.Min(Math.Max(0, value), MaxHealth); }
         }
         public int MaxHealth { get; set; }
-        public short ArmorClass { get; set; }
+        public byte ArmorClass { get; set; }
 
         public Character(string name, CharacterClass cClass)
         {
